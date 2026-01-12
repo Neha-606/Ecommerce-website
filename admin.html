@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.2/main.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.2/main.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="admin.css">
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            document.getElementById(pageId).classList.add('active');
+
+            document.querySelectorAll('.sidebar ul li').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            event.currentTarget.classList.add('active');
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            showPage('dashboard'); // Default page
+        });
+    </script>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2><a href="https://tanvixtechnologies.com/" target="_blank" class="clickable-header">TANVIX TECHNOLOGIES</a></h2>
+    <nav>
+        <ul>
+            <li class="active" onclick="showPage('dashboard')">🏠 Dashboard</li>
+            <li onclick="showPage('user')">👤 User</li>
+            <li onclick="showPage('portfolio')">📁 Portfolio</li>
+            <li onclick="showPage('seo')">💡 SEO Analytics</li>
+            <li class="has-submenu">
+                <span onclick="toggleSubmenu()">📊 Website <i class="arrow fas fa-chevron-right"></i></span>
+                <ul class="submenu">
+                    <li onclick="showPage('pages')">Pages</li>
+                    <li onclick="showPage('blogs')">Blogs</li>
+                    <li onclick="showPage('emails')">Emails</li>
+                    <li onclick="showPage('forms')">Forms</li>
+                    <li onclick="showPage('frontend')">Frontend</li>
+                    <li onclick="showPage('backend')">Backend</li>
+                </ul>
+            </li>
+            <li onclick="showPage('settings')">⚙ Settings</li>
+     
+        <li class="has-submenu"> 
+                <span onclick="toggleSubmenu()">📰 Social Media <i class="arrow fas fa-chevron-right"></i></span>
+                <ul class="submenu">
+                    <li onclick="showPage('insta')">Instagram</li>
+                    <li onclick="showPage('facebook')">Facebook</li>
+                    <li onclick="showPage('linedin')">Linkedin</li>
+                    <li onclick="showPage('youtube')">Youtube</li>
+                    <li onclick="showPage('google')">Google</li>
+                </ul>
+            </li>
+            <li onclick="showPage('Notifications')">🔔 Notifications</li>
+        </ul>
+    </nav>
+</aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Welcome Back, Person!</h1>
+                <div class="icons">
+                    <span>🔔</span>
+                    <span>
+                        <input type="text" placeholder="🔍 " class="search-bar">
+		            </span>
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+                    <div class="profile-menu">
+                        <div class="profile" onclick="toggleProfileMenu()">
+                            <span>👤 Person</span> ⏷
+                        </div>
+                        <ul class="profile-dropdown" id="profileDropdown">
+                            <li onclick="viewProfile()">👤 View Profile</li>
+                            <li onclick="openSettings()">⚙ Settings</li>
+                            <li onclick="logout()">🚪 Logout</li>
+                        </ul>
+                    </div>
+            </header>
+
+
+            <section id="dashboard" class="page active">
+             <div class="summary">
+                <div class="card">📈 Total Users: 1200   
+		        </div>
+                <div class="card">💼 Projects: 45
+                </div>
+                <div class="card">🕒 Pending Tasks:
+                </div>
+            </div>
+
+            <div class="projects">
+                <h2>Recent Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Title</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Development Team</td>
+                            <td class="status review">Review</td>
+                        </tr>
+                        <tr>
+                            <td>UX/UI Design</td>
+                            <td>UI Team</td>
+                            <td class="status in-progress">In Progress</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Development Team</td>
+                            <td class="status review">Review</td>
+                        </tr>
+                        <tr>
+                            <td>UX/UI Design</td>
+                            <td>UI Team</td>
+                            <td class="status in-progress">In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Development Team</td>
+                            <td class="status review">Review</td>
+                        </tr>
+                        <tr>
+                            <td>UX/UI Design</td>
+                            <td>UI Team</td>
+                            <td class="status in-progress">In Progress</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+            <section id="user" class="page">
+                <p>Here is an overview of your tasks, notifications, and reports.</p>
+                <ul>
+                    <li>🔹 Total Users: 120</li>
+                    <li>🔹 Active Projects: 8</li>
+                    <li>🔹 Pending Tasks: 15</li>
+                    <li>🔹 Messages: 3 Unread</li>
+                </ul>
+            </section>
+
+            
+            <section id="portfolio" class="page">
+                <h2>Portfolio</h2>
+                <ul>
+                    <li>🔹 Sujata</li>
+                    <li>🔹 meenu</li>
+                    <li>🔹 prachi</li>
+                    <li>🔹 gautam</li>
+                </ul>
+            </section>
+
+            <section id="seo" class="page">
+                <h2>SEO Analytics</h2>
+                <p>Analyze your website’s SEO performance and improve rankings.</p>
+            </section>
+            
+            <section id="pages" class="page">
+                <p>Here is an overview of your tasks, notifications, and reports.</p>
+                <div class="container mt-4">
+                    <button class="btn btn-success mb-3">+ Add New</button>
+                
+                    <div class="d-flex justify-content-between mb-2">
+                        <div>
+                            <button class="btn btn-secondary btn-sm">Copy</button>
+                            <button class="btn btn-secondary btn-sm">CSV</button>
+                            <button class="btn btn-secondary btn-sm">Excel</button>
+                            <button class="btn btn-secondary btn-sm">PDF</button>
+                            <button class="btn btn-secondary btn-sm">Print</button>
+                            <button class="btn btn-secondary btn-sm dropdown-toggle">Column visibility</button>
+                        </div>
+                        <input type="text" class="form-control w-25" placeholder="Search">
+                    </div>
+                
+                    <table class="table1 table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>Title</th>
+                                <th>Slug</th>
+                                <th>Status</th>
+                                <th>Action(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Home</td>
+                                <td>home</td>
+                                <td class="text-success">Active</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">View</button>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Contact us</td>
+                                <td>contact</td>
+                                <td class="text-success">Active</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">View</button>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>About Us</td>
+                                <td>about</td>
+                                <td class="text-success">Active</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">View</button>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Services</td>
+                                <td>services</td>
+                                <td class="text-success">Active</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">View</button>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>FAQ</td>
+                                <td>faq</td>
+                                <td class="text-success">Active</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">View</button>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Blogs</td>
+                                <td>blogs</td>
+                                <td class="text-success">Active</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">View</button>
+                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <section id="blogs" class="page">
+                <h2>Blogs</h2>
+                <p>Create and manage blog content.</p>
+            </section>
+            
+            <section id="emails" class="page">
+                <h2>Emails</h2>
+                <p>Manage email campaigns and analytics.</p>
+            </section>
+            
+            <section id="forms" class="page">
+                <h2>Forms</h2>
+                <p>Track form submissions and interactions.</p>
+            </section>
+            
+           
+<section id="frontend" class="page">
+    <h2>Frontend Development</h2>
+    <p>Modify the UI/UX design of your website.</p>
+    <div class="settings-container">
+        <div class="setting-item" onclick="toggleDropdown(this)">Basic
+            <div class="dropdown-content">Basic settings content...</div>
+        </div>
+        <div class="setting-item" onclick="toggleDropdown(this)">Website
+            <div class="dropdown-content">Website settings content...</div>
+        </div>
+        <div class="setting-item" onclick="toggleDropdown(this)">Website (Footer)
+            <div class="dropdown-content">Footer settings content...</div>
+        </div>
+        <div class="setting-item" onclick="toggleDropdown(this)">Website (SEO)
+            <div class="dropdown-content">SEO settings content...</div>
+        </div>
+        <div class="setting-item" onclick="toggleDropdown(this)">Mobile App
+            <div class="dropdown-content">Mobile app settings content...</div>
+        </div>
+        <div class="setting-item" onclick="toggleDropdown(this)">Contact
+            <div class="dropdown-content">Contact settings content...</div>
+        </div>
+        <div class="setting-item" onclick="toggleDropdown(this)">Pages
+            <div class="dropdown-content">Pages settings content...</div>
+        </div>
+    </div>
+</section>
+            
+            <section id="backend" class="page">
+                <h2>Backend Development</h2>
+                <p>Manage server-side operations and APIs.</p>
+
+                <div class="settings-container">
+                    <div class="setting-item" onclick="toggleDropdown(this)">Basic
+                        <div class="dropdown-content">Basic settings content...</div>
+                    </div>
+                    <div class="setting-item" onclick="toggleDropdown(this)">Website
+                        <div class="dropdown-content">Website settings content...</div>
+                    </div>
+                    <div class="setting-item" onclick="toggleDropdown(this)">Website (Footer)
+                        <div class="dropdown-content">Footer settings content...</div>
+                    </div>
+                    <div class="setting-item" onclick="toggleDropdown(this)">Website (SEO)
+                        <div class="dropdown-content">SEO settings content...</div>
+                    </div>
+                    <div class="setting-item" onclick="toggleDropdown(this)">Mobile App
+                        <div class="dropdown-content">Mobile app settings content...</div>
+                    </div>
+                    <div class="setting-item" onclick="toggleDropdown(this)">Contact
+                        <div class="dropdown-content">Contact settings content...</div>
+                    </div>
+                    <div class="setting-item" onclick="toggleDropdown(this)">Pages
+                        <div class="dropdown-content">Pages settings content...</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="settings" class="page">
+                <h2>Settings</h2>
+                <p>Customize system preferences and security settings.</p>
+            </section>
+            
+            <section id="insta" class="page">
+                <h2>Instagram</h2>
+                <p>Manage Instagram posts and analytics.</p>
+            </section>
+            
+            <section id="facebook" class="page">
+                <h2>Facebook</h2>
+                <p>Handle Facebook campaigns and insights.</p>
+            </section>
+            
+            <section id="linkedin" class="page">
+                <h2>LinkedIn</h2>
+                <p>Track LinkedIn engagement and schedule posts.</p>
+            </section>
+            
+            <section id="youtube" class="page">
+                <h2>YouTube</h2>
+                <p>Monitor YouTube videos and audience insights.</p>
+            </section>
+            
+            <section id="google" class="page">
+                <h2>Google</h2>
+                <p>View Google My Business analytics and search performance.</p>
+            </section>
+            
+            <section id="Notifications" class="page">
+                <h2>Notifications</h2>
+                <p>Stay updated with alerts and messages.</p>
+            </section>
+            
+        </main>
+    </div>
+
+	<footer>
+        <p>Contact Us | Terms of Service | Social Links</p>
+    </footer>
+
+<script>
+
+
+
+function toggleSubmenu() {
+    const submenuParent = event.currentTarget.parentElement;
+    submenuParent.classList.toggle('active');
+}
+
+function toggleProfileMenu() {
+    document.getElementById("profileDropdown").classList.toggle("show");
+}
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function (event) {
+    const profileMenu = document.querySelector(".profile-menu");
+    if (!profileMenu.contains(event.target)) {
+        document.getElementById("profileDropdown").classList.remove("show");
+    }
+});
+
+// Example functions for menu options
+function viewProfile() {
+    alert("Redirecting to Profile...");
+}
+
+function openSettings() {
+    alert("Opening Settings...");
+}
+
+function logout() {
+    alert("Logging out...");
+}
+
+
+function toggleDropdown(element) {
+        const dropdown = element.querySelector(".dropdown-content");
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+            element.classList.remove("active");
+        } else {
+            dropdown.style.display = "block";
+            element.classList.add("active");
+        }
+    }
+</script>
+
+
+
+</body>
+</html>

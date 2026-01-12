@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Men's Fashion Banner</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8f8;
+      color: #333;
+    }
+
+    .hero-banner {
+      width: 100%;
+      height: 400px;
+      background: url('https://via.placeholder.com/1500x400?text=Men+Fashion+Banner') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 40px 20px;
+    }
+
+    .category-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    .category-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .category-label {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <div class="hero-text">
+      <h1>Men's New Season Arrivals</h1>
+      <p>Style up with the latest in fashion — Shirts, Jeans, Shoes & more</p>
+    </div>
+  </div>
+
+  <!-- Category Section -->
+  <section class="categories">
+    <div class="category-card">
+      <img src="https://via.placeholder.com/400x300?text=T-Shirts" alt="T-Shirts">
+      <div class="category-label">T-Shirts</div>
+    </div>
+    <div class="category-card">
+      <img src="https://via.placeholder.com/400x300?text=Jeans" alt="Jeans">
+      <div class="category-label">Jeans</div>
+    </div>
+    <div class="category-card">
+      <img src="https://via.placeholder.com/400x300?text=Footwear" alt="Footwear">
+      <div class="category-label">Footwear</div>
+    </div>
+  </section>
+
+</body>
+</html>
+t

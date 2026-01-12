@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: var(--bg-color, #ffffff);
+    color: var(--text-color, #000000);
+}
+.dashboard {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.sidebar {
+    width: 21%;
+    background: linear-gradient(45deg,#013328 40%,grey);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+.sidebar h2 {
+    text-align: start;
+    margin-bottom: 20px;
+    font-size:1.9rem;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+.sidebar ul li:hover{
+    background: grey;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Hide submenus by default */
+.submenu {
+display: none;
+list-style: none;
+padding-left: 20px;
+
+}
+
+
+/* Indicate items with submenus */
+.has-submenu > span {
+cursor: pointer;
+display: block;
+padding: 15px;
+transition: background 0.3s;
+}
+
+/* Show submenu when active */
+.has-submenu.active .submenu {
+display: block;
+}
+
+.has-submenu ul li{
+background: grey;
+}
+
+.has-submenu ul li:hover{
+background: #013328;
+}
+
+
+.dark-mode-toggle {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #013328;
+    color: white;
+    border-radius: 5px;
+}
+.summary {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+.card {
+    flex: 1;
+    padding: 50px;
+    background: var(--card-bg,linear-gradient(45deg,#013328 10%,grey));
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.status.review {
+    color: white;
+    background: #013328;
+    padding: 5px;
+    border-radius: 5px;
+}
+.status.in-progress {
+    color: white;
+    background: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+.fa-solid{
+color:#013328;
+font-size:2rem;
+}
+
+.search-bar {
+    padding: 5px;
+border-radius:20px;
+}
+
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: grey;
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    background: #013328;
+    color: white;
+    position: fixed;
+    width: 78%;
+    bottom: 0;
+    left:21%;
+}
+
+footer p{
+    margin-top: -1px;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.page {
+    display: none;
+}
+.page.active {
+    display: block;
+    
+}
+
+
+
+.list {
+text-align: center;
+}
+
+.list input {
+width: 50%;
+padding: 8px;
+margin-bottom: 10px;
+}
+
+
+.list button {
+padding: 8px 15px;
+background-color: grey;
+color: white;
+border: none;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+.task-container {
+height: 250px;
+overflow: hidden;
+border: 2px solid #333;
+padding: 10px;
+background: transparent;
+position: relative;
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+.list ul {
+list-style: none;
+padding: 0;
+margin: 0;
+position: absolute;
+bottom: 0;
+width: 90%;
+}
+
+
+.list li {
+background: grey;
+color: white;
+padding: 10px;
+margin-bottom: 5px;
+border-radius: 5px;
+text-align: center;
+opacity: 0;
+animation: slideUp 0.5s ease-in forwards;
+}
+.profile-menu {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+
+.profile {
+background: grey;
+color: white;
+padding: 7px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.profile-dropdown {
+display: none;
+position: absolute;
+right: 0;
+background: white;
+list-style: none;
+padding: 10px;
+margin-top: 5px;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+min-width: 150px;
+z-index: 1000;
+}
+
+.profile-dropdown li {
+padding: 10px;
+cursor: pointer;
+color: black;
+}
+
+.profile-dropdown li:hover {
+background: #ddd;
+}
+
+/* Show dropdown when active */
+.profile-dropdown.show {
+display: block;
+}
+
+.arrow { 
+transition: transform 0.3s ease; 
+}
+.has-submenu.active .arrow 
+{ 
+transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .summary {
+        flex-direction: column;
+    }
+    .dashboard {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.table1 {
+background-color: white;
+border-radius: 5px;
+overflow: hidden;
+}
+
+.table1 thead {
+background-color: #f8f9fa;
+}
+
+.table1 tbody tr:hover {
+background-color: #f1f1f1;
+}
+
+button {
+margin-right: 5px;
+}
+
+
+.settings-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.setting-item {
+    background-color: grey;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    position: relative;
+    color:white;
+}
+
+.setting-item::after {
+    content: "+";
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+}
+
+.setting-item.active::after {
+    content: "-";
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid black;
+    background: #013328;
+}
+
+.clickable-header {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.clickable-header:hover {
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    text-decoration: none;
+}

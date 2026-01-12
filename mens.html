@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Wear</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <header id="header">
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fa-solid fa-bars"></label>
+
+        <div class="logo-container">
+            <a href="#" class="logo">Shopzy</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="account">
+            <div class="col">
+                <i class="fa-regular fa-user"></i>
+                <p>Account</p>
+            </div>
+            <div class="col">
+                <i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </header>
+
+
+   <section class="mens">
+
+    <div class="mens-banner">
+        <h1>Men's New Season Arrivals</h1>
+        <p>Style up with the latest in fashion — Shirts, Jeans, Shoes & more</p>
+        <div class="mens-catogry">
+            <button class="filter-button" value="shirt">Shirts</button>
+            <button class="filter-button" value="t-shirt">T-Shirts</button>
+            <button class="filter-button" value="jeans">Jeans</button>
+            <button class="filter-button" value="ethnic">Ethnic</button>
+        </div>
+    </div>
+
+
+    <div class="suit mens-products">
+
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/1.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Campus Sutra</h3>
+                <p>Mens Crimson Red & Midnight Black Paisley Flora Shirt</p>
+                <h2>₹876</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/2.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>The Indian Garage Co</h3>
+                <p>Light Blue Men's Slim Fit Solid Mid-Rise Stretchable Jeans</p>
+                <h2>₹896</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/3.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>KISAH</h3>
+                <p>Men Grey Silk Blend Jacquard Kurta Indowestern Sherwani Churidar Set with Geometric Pattern</p>
+                <h2>₹6,499</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/4.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Cantabil</h3>
+                <p>Men Wine Solid Mandarin Collar Half Sleeve T-Shirt</p>
+                <h2>₹696</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img" >
+                <img src="images/mens/5.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Jack & Jones</h3>
+                <p>Black Printed Regular Fit T-Shirt</p>
+                <h2>₹1,696</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/6.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Odette</h3>
+                <p>Black Viscose Rayon Stitched Kurta for Men</p>
+                <h2>₹2,416</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/7.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Subtract</h3>
+                <p>Flex Waist 4 Way Stretch Formal Trousers in Cream</p>
+                <h2>₹2,287</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/8.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>BULLMER</h3>
+                <p>Trendy Printed Blue Causal Shirt for Men</p>
+                <h2>₹980</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/9.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Style Quotient</h3>
+                <p>Men Black Relaxed Fit Mid Rise Cargos</p>
+                <h2>₹1,590</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/10.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Jockey</h3>
+                <p>MV16 Men Lightweight Microfiber Solid Active Wear T-Shirt - White</p>
+                <h2>₹790</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/11.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Rare Rabbit</h3>
+                <p>Holand Navy Casual Shirts</p>
+                <h2>₹2,160</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/12.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Sanwara</h3>
+                <p>Purple Stylish Ethnic Chikankari Kurta for Men</p>
+                <h2>₹2,740</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/13.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>KISAH</h3>
+                <p>Men Grey Nehru Jacket</p>
+                <h2>₹3,499</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/14.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Styli</h3>
+                <p>Men's White Contrast Piping and Popper Oversized Open Hem Cotton Trackpant</p>
+                <h2>₹1,340</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/15.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Jack & Jones</h3>
+                <p>Red Slim Fit T-Shirt</p>
+                <h2>₹1,440</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/16.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Parcel Yard</h3>
+                <p>Men's Airforce Self Design Shirt With Collar</p>
+                <h2>₹499</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/17.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>U.S. POLO ASSN.</h3>
+                <p>Brown Pure Cotton Oversized T-Shirt</p>
+                <h2>₹899</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/18.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>The Indian Garage Co</h3>
+                <p>Men Slim Fit Multi Striped Full Sleeves Cutaway Collar Casual Shirt - White</p>
+                <h2>₹753</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/19.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>TATTVA</h3>
+                <p>Mens Maroon Toned Ethnic Dhoti with Angavastram (Shalya) (Set of 2)</p>
+                <h2>₹2,500</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/20.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Urbano Fashion</h3>
+                <p>Men Blue Regular Fit Washed Jeans Stretchable</p>
+                <h2>₹1,999</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/21.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Perch</h3>
+                <p>Men Sage Green Stripes Linen Shirt</p>
+                <h2>₹1,530</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/22.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Bewakoof</h3>
+                <p>Men's Blue Super Baggy Fit Mid-Rise Jeans</p>
+                <h2>₹1,535</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/23.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Tommy Hilfiger</h3>
+                <p>Navy Blue Logo Regular Fit Cotton T-Shirt</p>
+                <h2>₹1,680</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/24.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Odette</h3>
+                <p>Men White Cotton Blend Embroidered Stitched Kurta with Jacket (Set of 2)</p>
+                <h2>₹2,579</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/25.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Bewakoof</h3>
+                <p>Men's Blue Baggy Fit Cargo Carpenter Mid-Rise Jeans</p>
+                <h2>₹1,599</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/26.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>The Souled Store</h3>
+                <p>Original Tropical Beat Men Printed Shirts</p>
+                <h2>₹1,299</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/27.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Bewakoof</h3>
+                <p>Men Red Graphic Oversized T-Shirt</p>
+                <h2>₹599</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/28.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Kraft India</h3>
+                <p>Abstract Marble Printed Cream Mandarin Collor Cotton Kurta</p>
+                <h2>₹1,499</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="ethnic">
+            <div class="suit-img">
+                <img src="images/mens/29.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Odette</h3>
+                <p>Ivory Viscose Silk Stitched Kurta for Men</p>
+                <h2>₹1,824</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="jeans">
+            <div class="suit-img">
+                <img src="images/mens/30.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Styli</h3>
+                <p>Overdyed Cargo Pocket Straight Fit Jeans</p>
+                <h2>₹1,159</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="shirt">
+            <div class="suit-img">
+                <img src="images/mens/31.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Arrow</h3>
+                <p>Sports Pure Black Cotton Slim Casual Shirt</p>
+                <h2>₹1,625</h2>
+            </div>
+        </div>
+        <div class="suit-box" data-category="t-shirt">
+            <div class="suit-img">
+                <img src="images/mens/32.avif" alt="">
+            </div>
+            <div class="suit-content">
+                <h3>Bewakoof</h3>
+                <p>Men's Black Oversized T-shirt</p>
+                <h2>₹599</h2>
+            </div>
+        </div>
+        
+
+    </div>
+
+    
+   </section>
+
+
+    
+
+     <!-- <div class="footer">
+      <div class="footer-content">
+          <ul>
+            <li class="footer-heading">About</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Shopzy Stories</li>
+            <li>Press</li>
+            <li>Corporate Information</li>
+          </ul>
+
+          <ul>
+                <li class="footer-heading">Group Companies</li>
+                <li>Myntra</li>
+                <li>Cleartrip</li>
+                <li>Shopsy</li>
+            </ul>
+
+            <ul>
+                <li class="footer-heading">Help</li>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Return</li>
+                <li>FAQ</li>
+            </ul>
+
+            <ul>
+                <li class="footer-heading">Consumer Policy</li>
+                <li>Cancellation & Return</li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>Grievance Redressal</li>
+                <li>ERP Compilance</li>
+            </ul>
+            <hr>
+            <div class="address">
+                <h5 class="footer-heading">Mail Us :</h5>
+            <p>shopzy internet private limited, <br>building alyssa, begonia & <br>clove embassy tech village, <br>bengaluru, 560103, <br>karnataka, india</p>
+
+             <div class="social">
+                <h5 class="footer-heading">Social :</h5>
+                <p class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </p>
+            </div>
+
+            </div>
+
+            <div class="address">
+                <h5 class="footer-heading">Registered office Address</h5>
+            <p>shopzy internet private limited, <br>building alyssa, begonia & <br>clove embassy tech village,<br>bengaluru, 560103, <br>karnataka, india <br> CIN : TEIS735439DNXKDS <br>telephone : <a href="#">0845272827 </a> / <a href="#">857493</a></a></p>
+            
+        </div>
+        </div>
+
+        <hr class="line">
+
+        <div class="end">
+            <p><i class="fa-solid fa-shop"></i> Become a Seller</p>
+            <p><i class="fa-solid fa-star-of-life"></i>Advertise</p>
+            <p><i class="fa-solid fa-gift"></i>Gift Cards</p>
+            <p><i class="fa-solid fa-question"></i>Help</p>
+            <p>&copy;2025 @shopzy.com</p>
+            <p class="payment">
+                <img src="images/pay.png" alt="">
+            </p>
+        </div>
+    </div> -->
+
+    <script>
+    const buttons = document.querySelectorAll('.filter-button');
+const products = document.querySelectorAll('.suit-box');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const selectedCategory = button.value;
+
+    products.forEach(product => {
+      const category = product.getAttribute('data-category');
+      if (selectedCategory === category) {
+        product.style.display = 'block';
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  });
+});
+
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="ecommerce.js"></script>
+</body>
+</html>

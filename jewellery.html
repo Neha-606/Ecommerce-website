@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <header id="header">
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fa-solid fa-bars"></label>
+
+        <div class="logo-container">
+            <a href="#" class="logo">Shopzy</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="account">
+            <div class="col">
+                <i class="fa-regular fa-user"></i>
+                <p>Account</p>
+            </div>
+            <div class="col">
+                <i class="fa-regular fa-heart"></i>
+                <p>Wishlist</p>
+            </div>
+            <div class="col">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="jewellery">
+         <h2>Jewellery Collection</h2>
+
+         <div class="jew-container">
+
+            <div class="filters">
+                <h3>Filter By Category</h3>
+                <label><input type="checkbox" class="filter-checkbox" value="earrings"> Earrings</label>
+                <label><input type="checkbox" class="filter-checkbox" value="jewellery"> Jewellery Sets</label>
+                <label><input type="checkbox" class="filter-checkbox" value="ring"> Rings</label>
+                <label><input type="checkbox" class="filter-checkbox" value="anklets"> Anklets</label>
+                <label><input type="checkbox" class="filter-checkbox" value="bangle"> Bangle Bracelets</label>
+                <label><input type="checkbox" class="filter-checkbox" value="jewellery"> Necklaces & Chokers</label>
+                <label><input type="checkbox" class="filter-checkbox" value="hair"> Hair Accessories</label>
+            </div>
+
+        
+            <div class="product-list">
+                <div class="product" data-category="bangle">
+                    <img src="images/jewellery/1.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="earrings">
+                    <img src="images/jewellery/2.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="jewellery">
+                    <img src="images/jewellery/3.avif" alt="">
+                        <h3>Saraf RS Jewellery</h3>
+                        <h4>₹640</h4>
+                </div>
+                <div class="product" data-category="hair">
+                    <img src="images/jewellery/16.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="anklets">
+                    <img src="images/jewellery/17.avif" alt="">
+                        <h3>Yellow Chimes</h3>
+                        <h4>₹440</h4>
+                </div>
+                <div class="product" data-category="hair">
+                    <img src="images/jewellery/29.avif" alt="">
+                        <h3>Vogue Panash</h3>
+                        <h4>₹518</h4>
+                </div>
+                <div class="product" data-category="ring">
+                    <img src="images/jewellery/18.avif" alt="">
+                        <h3>Carlton London</h3>
+                        <h4>₹1,040</h4>
+                </div>
+                <div class="product" data-category="earrings">
+                    <img src="images/jewellery/22.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹540</h4>
+                </div>
+                <div class="product" data-category="bangle">
+                    <img src="images/jewellery/23.avif" alt="">
+                        <h3>Jewels Galaxy</h3>
+                        <h4>₹390</h4>
+                </div>
+                <div class="product" data-category="hair">
+                    <img src="images/jewellery/30.avif" alt="">
+                        <h3>Mueras</h3>
+                        <h4>₹400</h4>
+                </div>
+                <div class="product" data-category="ring">
+                    <img src="images/jewellery/21.avif" alt="">
+                        <h3>Jewels Galaxy</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="bangle">
+                    <img src="images/jewellery/4.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="anklets">
+                    <img src="images/jewellery/26.avif" alt="">
+                        <h3>Palmonas</h3>
+                        <h4>₹1,840</h4>
+                </div>
+                <div class="product" data-category="hair">
+                    <img src="images/jewellery/31.avif" alt="">
+                        <h3>PANASH</h3>
+                        <h4>₹563</h4>
+                </div>
+                <div class="product" data-category="jewellery">
+                    <img src="images/jewellery/5.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="anklets">
+                    <img src="images/jewellery/27.avif" alt="">
+                        <h3>White Lies</h3>
+                        <h4>₹840</h4>
+                </div>
+                
+                <div class="product" data-category="earrings">
+                    <img src="images/jewellery/6.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                
+                 <div class="product" data-category="bangle">
+                    <img src="images/jewellery/7.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="earrings">
+                    <img src="images/jewellery/24.avif" alt="">
+                        <h3>OOMPH</h3>
+                        <h4>₹540</h4>
+                </div> 
+                <div class="product" data-category="ring">
+                    <img src="images/jewellery/25.avif" alt="">
+                        <h3>OOMPH</h3>
+                        <h4>₹449</h4>
+                </div> 
+                
+                <div class="product" data-category="jewellery">
+                    <img src="images/jewellery/8.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div> 
+                
+                
+                <div class="product" data-category="anklets">
+                    <img src="images/jewellery/9.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="hair">
+                    <img src="images/jewellery/19.avif" alt="">
+                        <h3>Priyaasi</h3>
+                        <h4>₹1,240</h4>
+                </div>
+                <div class="product" data-category="anklets">
+                    <img src="images/jewellery/28.avif" alt="">
+                        <h3>Yellow Chimes</h3>
+                        <h4>₹430</h4>
+                </div>
+                <div class="product" data-category="earrings">
+                    <img src="images/jewellery/10.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="ring">
+                    <img src="images/jewellery/20.avif" alt="">
+                        <h3>Ornate Jewels</h3>
+                        <h4>₹1,240</h4>
+                </div>
+                <div class="product" data-category="jewellery">
+                    <img src="images/jewellery/11.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="jewellery">
+                    <img src="images/jewellery/12.avif" alt="">
+                        <h3>Karatcart</h3>
+                        <h4>₹640</h4>
+                </div>
+                <div class="product" data-category="jewellery">
+                    <img src="images/jewellery/13.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="ring">
+                    <img src="images/jewellery/14.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                <div class="product" data-category="bangle">
+                    <img src="images/jewellery/15.avif" alt="">
+                        <h3>Designs & You</h3>
+                        <h4>₹340</h4>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    
+     <div class="footer">
+      <div class="footer-content">
+          <ul>
+            <li class="footer-heading">About</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Shopzy Stories</li>
+            <li>Press</li>
+            <li>Corporate Information</li>
+          </ul>
+
+          <ul>
+                <li class="footer-heading">Group Companies</li>
+                <li>Myntra</li>
+                <li>Cleartrip</li>
+                <li>Shopsy</li>
+            </ul>
+
+            <ul>
+                <li class="footer-heading">Help</li>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Return</li>
+                <li>FAQ</li>
+            </ul>
+
+            <ul>
+                <li class="footer-heading">Consumer Policy</li>
+                <li>Cancellation & Return</li>
+                <li>Terms of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>Grievance Redressal</li>
+                <li>ERP Compilance</li>
+            </ul>
+            <hr>
+            <div class="address">
+                <h5 class="footer-heading">Mail Us :</h5>
+            <p>shopzy internet private limited, <br>building alyssa, begonia & <br>clove embassy tech village, <br>bengaluru, 560103, <br>karnataka, india</p>
+
+             <div class="social">
+                <h5 class="footer-heading">Social :</h5>
+                <p class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </p>
+            </div>
+
+            </div>
+
+            <div class="address">
+                <h5 class="footer-heading">Registered office Address</h5>
+            <p>shopzy internet private limited, <br>building alyssa, begonia & <br>clove embassy tech village,<br>bengaluru, 560103, <br>karnataka, india <br> CIN : TEIS735439DNXKDS <br>telephone : <a href="#">0845272827 </a> / <a href="#">857493</a></a></p>
+            
+        </div>
+        </div>
+
+        <hr class="line">
+
+        <div class="end">
+            <p><i class="fa-solid fa-shop"></i> Become a Seller</p>
+            <p><i class="fa-solid fa-star-of-life"></i>Advertise</p>
+            <p><i class="fa-solid fa-gift"></i>Gift Cards</p>
+            <p><i class="fa-solid fa-question"></i>Help</p>
+            <p>&copy;2025 @shopzy.com</p>
+            <p class="payment">
+                <img src="images/pay.png" alt="">
+            </p>
+        </div>
+    </div>
+
+    <script>
+    const checkboxes = document.querySelectorAll('.filter-checkbox');
+    const products = document.querySelectorAll('.product');
+
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', filterProducts);
+    });
+
+    function filterProducts() {
+      const selected = Array.from(checkboxes)
+        .filter(box => box.checked)
+        .map(box => box.value);
+
+      products.forEach(product => {
+        const category = product.getAttribute('data-category');
+        if (selected.length === 0 || selected.includes(category)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="ecommerce.js"></script>
+</body>
+</html>
